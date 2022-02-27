@@ -1,0 +1,9 @@
+event listener:
+Syntax:
+addEventListener(type, listener);
+addEventListener(type, listener, options);
+addEventListener(type, listener, useCapture);
+type:("now we using click")
+A case-sensitive string representing the event type to listen for.
+listener:("here we no need to add () for calling function")
+This must be an object implementing the EventListener interface, or a JavaScript function. 
