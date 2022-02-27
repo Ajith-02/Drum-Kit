@@ -7,3 +7,20 @@ type:("now we using click")
 A case-sensitive string representing the event type to listen for.
 listener:("here we no need to add () for calling function")
 This must be an object implementing the EventListener interface, or a JavaScript function. 
+
+--------------------------------------------------------------------------------------------------------------
+usually for loop( for(var i = 0; i<n; i++); ), here to know how many button in the drum, 
+use the class name "document.querySelectorAll(".drum")" and . length
+
+on click event, every button should respond so use [i] "querySelectorAll("button")[i]"
+
+var numberOfDrumButtons = document.querySelectorAll(".drum").length;
+
+for(var i = 0; i<numberOfDrumButtons; i++){
+    document.querySelectorAll("button")[i].addEventListener("click", handleClick);
+
+    function handleClick(){
+        alert(" i am clicked");
+    }
+}
+--------------------------------------------------------------------------------------------------------------
