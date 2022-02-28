@@ -71,3 +71,16 @@ other functions as a inputs.
 How to play sound on a Website
 -------------------------------------------------------------------------
 It will come under HTML Media Element
+
+Syntax:
+audioObj = new Audio(url);
+-------------------------------------------------------------------------
+var x = document.getElementById("myAudio");
+
+function playAudio() {
+  x.play();
+}
+
+function pauseAudio() {
+  x.pause();
+}
