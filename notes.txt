@@ -26,13 +26,48 @@ for(var i = 0; i<numberOfDrumButtons; i++){
 }
 --------------------------------------------------------------------------------------------------------------
 
+--------------------------------------------------------------------------------------------------------------
 
 Higher order functions and passing function as Arguments
---------------------------------------------------------------------------------------------------------------
+The below is Named function
+-------------------------------------------------------------------------
 $0.addEventListener("click", respondToClick);
 function respondToClick(){
     console.log("i got clicked");
 }
 
 
+addEventListener taking two inputs
+1st input specify what event it should listen to.
+2nd input specify what it should do once the event get detected
+The word click is a event(input 1), second input is a function
 
+-------------------------------------------------------------------------
+function calculator(num1, num2){
+    return num1 * num2;
+}
+calculator(2,5);
+
+here for every calculation doing separately, this will not good in coding
+-------------------------------------------------------------------------
+we can crete a function for all calculation and call in operator
+
+function add(num1, num2){
+    return num1 + num2;
+}
+function multiply(num1, num2){
+    return num1*num2
+}
+function calculator(num1,num2, operator){
+    return operator(num1,num2)
+}
+calculator(10,20,multiply);
+
+These types of function called Higher order function
+Higher order function are functions that can take
+other functions as a inputs.
+--------------------------------------------------------------------------------------------------------------
+
+How to play sound on a Website
+-------------------------------------------------------------------------
+It will come under HTML Media Element
