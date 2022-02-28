@@ -8,6 +8,7 @@ A case-sensitive string representing the event type to listen for.
 listener:("here we no need to add () for calling function")
 This must be an object implementing the EventListener interface, or a JavaScript function. 
 
+Adding event listener to the Button
 --------------------------------------------------------------------------------------------------------------
 usually for loop( for(var i = 0; i<n; i++); ), here to know how many button in the drum, 
 use the class name "document.querySelectorAll(".drum")" and . length
@@ -24,3 +25,14 @@ for(var i = 0; i<numberOfDrumButtons; i++){
     }
 }
 --------------------------------------------------------------------------------------------------------------
+
+
+Higher order functions and passing function as Arguments
+--------------------------------------------------------------------------------------------------------------
+$0.addEventListener("click", respondToClick);
+function respondToClick(){
+    console.log("i got clicked");
+}
+
+
+
