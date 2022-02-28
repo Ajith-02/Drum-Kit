@@ -84,3 +84,46 @@ function playAudio() {
 function pauseAudio() {
   x.pause();
 }
+-------------------------------------------------------------------------
+"this" is identity of the button triggered EventListener
+in the drum the letters are Red color, here "this" represents the button,
+the event is click so on click it will change to white.
+-------------------------------------------------------------------------
+ document.querySelectorAll("button")[i].addEventListener("click", function(){
+this.style.color = "white";
+-------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+
+JavaScript Objects:
+
+no need to specify like this var for same person
+in variable name after = is a values
+var person1Name = "abc"
+var person1Age = 21
+
+we can simply use JS object and give properties instead of values and wrap in a single var, person1.name we can call the name by .name
+in object after = is a properties
+var person1 = {
+    name: "abc";
+    age: 21;
+    language: ["English","Tamil"]
+}
+var person2 = {
+    name: "def";
+    age: 21;
+    language: ["English","Tamil"];
+}
+
+if there is many person adding one by one is not a good programming,
+use Constructor function
+The Constructor function - the function name starts with Capital letter
+
+function Person(name, age, language){
+    this.name = name;
+    this.age = age;
+    this.language = language
+}
+
+Initialise Object:
+
+var person1 = new Person("abc",21,["English","Tamil"]);
