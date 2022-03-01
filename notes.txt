@@ -29,6 +29,7 @@ for(var i = 0; i<numberOfDrumButtons; i++){
 --------------------------------------------------------------------------------------------------------------
 
 Higher order functions and passing function as Arguments
+Higher order function able to take function as a input
 The below is Named function
 -------------------------------------------------------------------------
 $0.addEventListener("click", respondToClick);
@@ -189,5 +190,33 @@ call makeSound() in main function "makeSound(buttonInnerHTML);"
 
 on pressing it will go to music sound and detect which key is pressed.
 --------------------------------------------------------------------------------------------------------------
+Understanding Callbacks and How to Respond to Events.
+
+Higher order function able to take function as a input
+document.addEventListener("keypress", respondTokey(event));
+    function respondTokey(event){
+        console.log("key pressed");
+    }
+});
+
+here addEventListener is a Higher order function, respondTokey is a input.
+
+respondTokey(event) is a Callback.
+here we gave name a (event), we can give any name we want, 
+like as respondTokey(evt), respondTokey(hai), in below function also we need to change.
+--------------------------------------------------------------------------------------------------------------
+
+Adding Animation to the Website:
+animation should work on when the button is pressed and keyboard key is pressed
+for this we need to create a new function and call in required places
+
+adding class name from JS: activeButton.classList.add("pressed");
+
+the below code is for, on key press it press, release (setTimeout) the button
+
+setTimeout(function() {
+  activeButton.classList.remove("pressed")
+}, 100);
+
 
 
