@@ -101,7 +101,8 @@ in variable name after = is a values
 var person1Name = "abc"
 var person1Age = 21
 
-we can simply use JS object and give properties instead of values and wrap in a single var, person1.name we can call the name by .name
+we can simply use JS object and give properties instead of values and wrap in a single var, 
+person1.name we can call the name by .name
 in object after = is a properties
 var person1 = {
     name: "abc";
@@ -127,3 +128,66 @@ function Person(name, age, language){
 Initialise Object:
 
 var person1 = new Person("abc",21,["English","Tamil"]);
+
+now we can simple add many person names
+var person2 = new Person("abc",21,["English","Tamil"]);
+var person3 = new Person("abc",21,["English","Tamil"]);
+
+we can get details with .name, .age
+person3.name;
+
+this key word is used, then new should be used
+--------------------------------------------------------------------------------------------------------------
+Switch statement
+ switch (key) {
+            case value:
+                
+                break;
+        
+            default:
+                break;
+        }
+-------------------------------------------------------------------------
+now we going to match with the letter inside the tag, 
+calling the variable name in switch and matching with each letter in HTML
+
+  var buttonInnerHTML = this.innerHTML;
+  switch (buttonInnerHTML) {
+      case "w":
+        var tom1 = new Audio("sounds/tom-1.mp3");
+        tom1.play();
+        break;   
+  }     
+--------------------------------------------------------------------------------------------------------------
+
+Objects, their Methods and the Dot Notation
+
+Constructor function: 
+
+function Person(name, age, language){
+    this.name = name;
+    this.age = age;
+    this.language = language;
+    this.moveSuitcase = function(){
+        alert("may i take your suitcase");
+        pickUpSuitcase();
+        move();
+    }
+}
+
+
+-------------------------------------------------------------------------
+Using keyboard Event listener to check for key presses
+
+document.addEventListener("keypress", function(event){
+  // console.log(event)
+  makeSound(event.key);
+});
+
+create a new function() "makeSound" move the switch case to this function,
+call makeSound() in main function "makeSound(buttonInnerHTML);"
+
+on pressing it will go to music sound and detect which key is pressed.
+--------------------------------------------------------------------------------------------------------------
+
+
